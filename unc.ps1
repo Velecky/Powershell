@@ -1,6 +1,4 @@
-﻿#$CitySource = "\\afsegbgfs3\DATA\IN\IN-Appdata\Cadsys2013\INFRA-TOOLS\IN-Programfiler\AF-Infrastructure-Tools.VLX"
-#$Cities = "Karlstad", "Stockholm","Sundvall"
-#$PathC ="\\af.se\storage\Location\Karlstad\Data\IN\IN-Appdata\Cadsys2013\INFRA-TOOLS\IN-Programfiler\AF-Infrastructure-Tools.VLX" 
+
 
 $results = @()
 
