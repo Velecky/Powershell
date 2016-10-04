@@ -16,7 +16,7 @@ while ($timeSpan -gt 0)
    foreach ($interface in $colInterfaces) {
       $bitsPerSec = $interface.BytesTotalPersec * 8
       $totalBits = $interface.CurrentBandwidth
-
+ 
       # Exclude Nulls (any WMI failures)
       if ($totalBits -gt 0) {
          $result = (( $bitsPerSec / $totalBits) * 100)
