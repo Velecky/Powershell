@@ -1,4 +1,4 @@
-﻿Function downloadSpeed($strUploadUrl)
+Function downloadSpeed($strUploadUrl)
 {
     $topServerUrlSpilt = $strUploadUrl -split 'upload'
     $url = $topServerUrlSpilt[0] + 'random2000x2000.jpg'
