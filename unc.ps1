@@ -1,4 +1,4 @@
-﻿$results = @()
+$results = @()
 
 $uncs = Get-content "C:\script\UNCPath.txt"
 Write-Output "----------------------------------
