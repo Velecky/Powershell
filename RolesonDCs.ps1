@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <#PSScriptInfo
 
@@ -42,3 +43,8 @@ Write-Output $Servers
 Foreach ($Server in $Servers){
 Invoke-Command -ComputerName $Server -ScriptBlock {Get-WindowsFeature | Where Installed | Export-Csv C:\DCRoles.csv -Append -notype}
 }
+=======
+$Servers= Get-Content C:\Users\Administrator\DCS.txt
+Write-Output $Servers
+Get-WindowsFeature -ComputerName $Servers | Where Installed | Out-File -FilePath test.csv
+>>>>>>> origin/master
