@@ -1,12 +1,62 @@
-﻿<#
+
+<#PSScriptInfo
+
+.VERSION 2.1
+
+.GUID 1636f0e3-7713-4213-a2a5-73b1c0bf7c2e
+
+.AUTHOR velecky@velecky.onmicrosoft.com
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS 
+
+.LICENSEURI 
+
+.PROJECTURI 
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#> 
+
+
+
+
+
+<# 
+
+.DESCRIPTION 
+Wbadmin test path C
+
+#> 
+
+Param()
+
+
+<#
 1. Import this Module import-module
 
 2.Get-DomainController > DCS.txt
 
 3.
+$computers=Get-DomainController
+Foreach ($computer in $computers) {
+Get-InstalledSoftware $computer -EA silentlyContinue|Export-Csv C:\scripts\wbadmin.csv -Append -notype}
+
 $computers = Get-Content -Path C:DCS.txt
 Get-WmiObject -Class win32_bios -cn $computers -EA silentlyContinue |
-Format-table __Server, Manufacturer, Version –AutoSize;
+Format-table __Server, Manufacturer, Version �AutoSize;
 Get-InstalledSoftware $computers
 #>
 

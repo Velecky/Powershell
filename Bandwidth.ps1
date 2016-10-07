@@ -1,4 +1,46 @@
-﻿#Get-Bandwidth.ps1
+
+<#PSScriptInfo
+
+.VERSION 2.0
+
+.GUID 7f54efb4-741e-4612-a2cd-0fac9f0c5312
+
+.AUTHOR velecky@velecky.onmicrosoft.com
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS 
+
+.LICENSEURI 
+
+.PROJECTURI 
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
+<# 
+
+.DESCRIPTION 
+ Bandwidth 
+
+#> 
+
+Param()
+
+
+#Get-Bandwidth.ps1
 # Measure the Network interface IO over a period of half a minute (0.5)
 
 $startTime = get-date

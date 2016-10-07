@@ -1,4 +1,46 @@
-﻿Function downloadSpeed($strUploadUrl)
+
+<#PSScriptInfo
+
+.VERSION 2.0
+
+.GUID a6048a09-3e66-467a-acd4-ce3e97098a65
+
+.AUTHOR velecky@velecky.onmicrosoft.com
+
+.COMPANYNAME 
+
+.COPYRIGHT 
+
+.TAGS 
+
+.LICENSEURI 
+
+.PROJECTURI 
+
+.ICONURI 
+
+.EXTERNALMODULEDEPENDENCIES 
+
+.REQUIREDSCRIPTS 
+
+.EXTERNALSCRIPTDEPENDENCIES 
+
+.RELEASENOTES
+
+
+#>
+
+<# 
+
+.DESCRIPTION 
+ WAN speed test 
+
+#> 
+
+Param()
+
+
+Function downloadSpeed($strUploadUrl)
 {
     $topServerUrlSpilt = $strUploadUrl -split 'upload'
     $url = $topServerUrlSpilt[0] + 'random2000x2000.jpg'
